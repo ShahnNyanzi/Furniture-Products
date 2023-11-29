@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+</head>
+<body>
+    <div class="container">
+        <div class="contain">
+            
+
+        
+            <nav class="lists" >
+                <ul>
+                    <li id="home"><a href="Home.html">Home</a></li>
+                        <li id="products"><a href="Products.html">Products</a></li>
+                            <li id="about"><a href="About.html">About</a></li>
+                </ul>
+
+            </nav>
+            <header class="title">Comfy</header>
+            
+
+     </div>
+     <div id="home-name">
+        <p >Home/  <span class="name">interior</span> </p>
+
+     </div>
+     <table>
+        <td>
+            <tr>
+                    <div  class="container">
+                        <div class="idp">
+                            <!-- <span class="name" id="name">Chastity</span> -->
+
+                            
+                    
+                    <img src="images/chastity-cortijo-R-w5Q-4Mqm0-unsplash.jpg"
+                    alt="picture"
+                    width="500"
+                    height="300"
+                     id="img" class="images" >
+                    
+                 <div class="npd">
+                    
+                    <span class="name" id="nam">Chastity</span> 
+                    <span id="price">$1.5 millions</span>
+                    <p id="description" >Wat leuk om jou eindelijk weer eens te schrijven, Ik heb je lang niet gezien<br>
+                        
+
+
+                        Ik woon nu in Amsterdam Ik woon in een klein huis samen Met mijn vriendin Naast<br> 
+                        Daar voetbal ik iedere zaterdag samen mijn huis is een voetbalveld een vrienden.<br>
+                        Daar voetbal ik iedere zaterdag samen met nog een paar vrienden Ik heb snieuwen.<br>
+                        Ik heb nieuwe vrienden gemaakt op de voetbalclub Zij heten Aman en Jan Jchttien.<br> 
+                        Ik heb nieuwe vrienden gemaakt op de voetbalclub Zij heten Aman en Jan Janisach.<br>
+                        Aman is de oudere broer van JanNederland bevalt mij erg goed Het enige nadeeliu.<br>
+                        Nederland bevalt mij erg goed. Het enige nadeel is dat het nogal vaak regentDem.<br>
+                    </p>
+                    <button class="add">ADD CHART</button>
+                        
+                        </div>
+                        
+                        
+                        
+                        </div>
+
+                    
+</div>
+
+                        
+                    
+                    </tr>
+                </td>
+              
+                
+            </table>
+
+            <!-- </aside> -->
+        
+        
+    <!-- </div> -->
+    <script>
+        window.onload = getProduct;
+    
+        function getProduct(){
+            // console.log('ok')
+         let params = new URLSearchParams(window.location.search);
+          let productName = params.get('product');
+        console.log(productName);
+        const xhr = new XMLHttpRequest();
+      xhr.open("GET", "products.json", true);
+      xhr.onreadystatechange = function(){
+        if(xhr.readyState ===4 && xhr.status===200){
+            const products = JSON.parse(xhr.responseText);
+            console.log(products);
+            let finalProduct = products.find((product)=>product.name === productName)
+            console.log(finalProduct.image)
+            document.querySelectorAll('.name').forEach((e)=>{
+                e.innerHTML = finalProduct.name
+            })
+            document.getElementById('img').src = finalProduct.image
+            document.getElementById('price').innerHTML = finalProduct.price
+            document.getElementById('description').innerHTML = finalProduct.description
+        }
+      }
+      xhr.send()
+        }
+    </script>
+    
+    </html>   
+

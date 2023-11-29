@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="contain">
+        <button class="buttons" id="btnhome">Home</button>
+        <a href="./Products.html">
+          <button class="buttons" id="btnproducts">Products</button></a
+        >
+        <button class="buttons" id="btnabove">Above</button>
+        <!-- <nav class="lists">
+          <ul>
+            <li id="home"><a href="Home.html">Home</a></li>
+            <li id="products"><a href="Products.html">Products</a></li>
+            <li id="about"><a href="About.html">About</a></li>
+          </ul>
+        </nav> -->
+
+        <header class="title">Comfy</header>
+      </div>
+
+      <div class="motto">Rest, Relax, Unwind</div>
+      <div>
+        <p>Embrace your choices- we do</p>
+      </div>
+      <button class="button" onclick="window.location.href='Products.html'" ;>
+        Show All
+      </button>
+    </div>
+    <div class="feature">/Featured</div>
+    <table class="imag-table">
+      <tr>
+        <td>
+          <div class="img-container">
+            <img
+              src="images/jason-briscoe-GliaHAJ3_5A-unsplash.jpg "
+              alt="picture"
+              width="400"
+              height="300"
+              class="images"
+            />
+
+            <div class="overlay">
+              <a href="#" class="icon" title="search">
+                <i
+                  onclick="window.location.href='product-one.html'"
+                  class="fas fa-search"
+                ></i>
+              </a>
+            </div>
+            <h1>Briscoe</h1>
+          </div>
+        </td>
+        <td>
+          <div class="img-container">
+            <img
+              src="images/curology-6CJg-fOTYs4-unsplash.jpg"
+              alt="picture"
+              width="400"
+              height="300"
+              class="images"
+            />
+
+            <div class="overlay">
+              <a href="#" class="icon" title="search">
+                <i
+                  onclick="window.location.href='product-two.html'"
+                  class="fas fa-search"
+                  class="fas fa-search"
+                ></i>
+              </a>
+            </div>
+            <h1>Curology</h1>
+
+            <!-- <div class="overlay"> -->
+            <!-- <a href="#" class="icon" title="search"> -->
+            <!-- <i class="fas fa-search"></i> -->
+            <!-- </a> -->
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+        </td>
+        <td>
+          <div class="img-container">
+            <img
+              src="images/pickawood-rwa0Yh38FeA-unsplash.jpg"
+              alt="picture"
+              width="400"
+              height="300"
+              class="images"
+            />
+
+            <div class="overlay">
+              <a href="#" class="icon" title="search">
+                <i
+                  onclick="window.location.href='product-three.html'"
+                  class="fas fa-search"
+                ></i>
+              </a>
+            </div>
+            <h1>Pickawood</h1>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="row" id="gethome"></div>
+    <div class="row" id="getproducts"></div>
+    <div class="row" id="getabout"></div>
+    <div class="row" id="showall"></div>
+  </body>
+</html>

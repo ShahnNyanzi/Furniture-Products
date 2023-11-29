@@ -1,0 +1,17 @@
+[{
+    "image":"https://media.istockphoto.com/id/472112339/photo/office.jpg?s=612x612&w=0&k=20&c=6Sz7uwxWOvHOoQ0LSLAfjy2Rx7gSOi5EhS6g8T4t_7w=",
+    "name":"High bank bench",
+    "price":"$4.9"},
+    {
+        "image":"https://media.istockphoto.com/id/147075927/photo/aerial-view-of-identical-cubicles-with-desktop-computers.jpg?s=612x612&w=0&k=20&c=cr_bm7f1RGbWu7vf-fokjnlyOt2TFf4ENMPHbR0vSUM=",
+        "name":"Utofia sofa",
+        "price":"$68"
+
+    },
+    {
+        "image":"https://media.istockphoto.com/id/104251890/photo/cubicles-and-desks-with-computers-in-modern-office.jpg?s=612x612&w=0&k=20&c=iU-O1ysiTDINVOSSInGHM3G0hX9FKCJeGjc0kYBJbmU=",
+        "name":"Entertainment seat",
+        "price":"$89"
+    }]
+
+    

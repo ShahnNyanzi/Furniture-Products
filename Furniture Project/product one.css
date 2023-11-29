@@ -1,0 +1,17 @@
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    color:navy blue;
+    text-decoration: none;
+  }
+  .image-description{
+    display:flex;
+    
+
+}
+p{
+    margin-left: 40px;
+}
